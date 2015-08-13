@@ -9,16 +9,16 @@ Uses a NodeJs backend with mongoDb.
 
 ## Convert to Materialize
 
-1
-jspm install github:Dogfalo/materialize@0.97.0
+1. jspm install github:Dogfalo/materialize@0.97.0
 added to config.js
 "Dogfalo/materialize": "github:Dogfalo/materialize@0.97.0",
 
-2
-change animation-main
+2. change animation-main
+
 import materialize from 'Dogfalo/materialize';
-3
-comment out in app.js
+
+3. comment out in app.js
+
 //import 'bootstrap';
 //import 'bootstrap/css/bootstrap.css!';
 
