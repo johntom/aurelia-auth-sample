@@ -7,6 +7,26 @@ Uses a NodeJs backend with mongoDb.
 3. You need an running MongoDb server.
 4. Gulp
 
+## Convert to Materialize
+
+1
+jspm install github:Dogfalo/materialize@0.97.0
+added to config.js
+"Dogfalo/materialize": "github:Dogfalo/materialize@0.97.0",
+
+2
+change animation-main
+import materialize from 'Dogfalo/materialize';
+3
+comment out in app.js
+//import 'bootstrap';
+//import 'bootstrap/css/bootstrap.css!';
+
+## Todo
+1. Fix css classes
+2. Fix auth
+3. Change backend to sailsjs
+
 ## How to run?
 
 1. cd client
@@ -19,5 +39,3 @@ Uses a NodeJs backend with mongoDb.
 8. cd ../client
 9. gulp watch
 10. Open an browser with http://localhost:4000
-
-
