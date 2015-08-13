@@ -19,6 +19,7 @@ System.config({
 
 System.config({
   "map": {
+    "Dogfalo/materialize": "github:Dogfalo/materialize@0.97.0",
     "aurelia-animator-css": "github:aurelia/animator-css@0.13.0",
     "aurelia-binding": "github:aurelia/binding@0.8.2",
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.14.0",
@@ -47,6 +48,10 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.13",
     "font-awesome": "npm:font-awesome@4.3.0",
     "paulvanbladel/aurelia-auth": "github:paulvanbladel/aurelia-auth@0.9.6",
+    "github:Dogfalo/materialize@0.97.0": {
+      "css": "github:systemjs/plugin-css@0.1.13",
+      "jquery": "github:components/jquery@2.1.4"
+    },
     "github:aurelia/animator-css@0.13.0": {
       "aurelia-templating": "github:aurelia/templating@0.13.11"
     },

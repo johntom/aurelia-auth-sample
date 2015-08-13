@@ -1,3 +1,4 @@
+import materialize from 'Dogfalo/materialize';
 import config from './authConfig';
 export function configure(aurelia) {
 	console.log("testje");

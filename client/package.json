@@ -39,6 +39,7 @@
   "jspm": {
     "directories": {},
     "dependencies": {
+      "Dogfalo/materialize": "github:Dogfalo/materialize@0.97.0",
       "aurelia-animator-css": "github:aurelia/animator-css@^0.13.0",
       "aurelia-binding": "github:aurelia/binding@^0.8.0",
       "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.14.0",

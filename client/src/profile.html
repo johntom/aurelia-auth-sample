@@ -1,7 +1,9 @@
+
+
 <template>
   <section class="au-animate">
     <div class="container">
-  <div class="panel panel-default col-md-6">
+  <div class="panel panel-default col  m 6">
     <div class="panel-heading">Profile</div>
     <div class="panel-body">
       <legend><i class="ion-clipboard"></i> Edit My Profile</legend>
@@ -23,7 +25,7 @@
     </div>
   </div>
 
-  <div class="panel panel-default col-md-6">
+  <div class="panel panel-default col m 6">
     <div class="panel-heading">Accounts</div>
     <div class="panel-body">
       <legend><i class="ion-link"></i> Linked Accounts</legend>
@@ -45,14 +47,14 @@
         <button class="btn btn-sm btn-danger" if.bind="profile.linkedin" click.delegate="unlink('linkedin')">
           <i class="ion-social-linkedin"></i> Unlink LinkedIn Account
         </button>
-        <button class="btn btn-sm btn-primary" if.bind="!profile.linkedin" click.delegate="link('linkedin')">
+        <button class="btn btn-small btn-primary" if.bind="!profile.linkedin" click.delegate="link('linkedin')">
           <i class="ion-social-linkedin"></i> Link LinkedIn Account
         </button>
 
-        <button class="btn btn-sm btn-danger" if.bind="profile.twitter" click.delegate="unlink('twitter')">
+        <button class="btn btn-small btn-danger" if.bind="profile.twitter" click.delegate="unlink('twitter')">
           <i class="ion-social-twitter"></i> Unlink Twitter Account
         </button>
-        <button class="btn btn-sm btn-primary" if.bind="!profile.twitter" click.delegate="link('twitter')">
+        <button class="btn btn-small btn-primary" if.bind="!profile.twitter" click.delegate="link('twitter')">
           <i class="ion-social-twitter"></i> Link Twitter Account
         </button>
 

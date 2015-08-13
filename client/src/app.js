@@ -1,5 +1,5 @@
-import 'bootstrap';
-import 'bootstrap/css/bootstrap.css!';
+//import 'bootstrap';
+//import 'bootstrap/css/bootstrap.css!';
 
 import {inject} from 'aurelia-framework';
 import {Router} from 'aurelia-router';
@@ -13,18 +13,19 @@ export class App {
     this.httpClientConfig = httpClientConfig;
     this.appRouterConfig = appRouterConfig;
   }
-  
+
   activate(){
-    
+
     this.httpClientConfig.configure();
     this.appRouterConfig.configure();
   }
+
+  //
+  // navigationComplete(navigationInstruction) {
+  //   // Enable the materialize "waves" effect on the new page.
+  //   Waves.displayEffect()
+  //
+  //   // Track page-views with google-analytics.
+  //   ga('send', 'pageview', '/' + navigationInstruction.fragment);
+  // }
 }
-
-
-
-
-
-
-
-

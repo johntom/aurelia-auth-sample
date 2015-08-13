@@ -1,3 +1,7 @@
+<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- orig
 <template>
   <require from='./nav-bar'></require>
 
@@ -6,5 +10,36 @@
   <div class="page-host">
     <router-view></router-view>
   </div>
-</template>
+</template> -->
+<template>
 
+
+  <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="mdi-navigation-menu"></i></a></div>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo waves-effect waves-light padding-top=20px  margin-left=80px ">
+     &nbsp;${router.title}
+         </a>
+
+      <a href="#" data-activates="mobile-demo" class="button-collapse" materialize="sidenav"><i class="mdi-navigation-menu"></i></a>
+      <ul class="right hide-on-med-and-down">
+  <!-- <nav-bar router.bind="router"></nav-bar> -->
+
+        <li repeat.for="route of router.navigation" class="${route.isActive ? 'active' : ''}">
+          <a href.bind="route.href" class="waves-effect waves-light">${route.title}</a>
+
+        </li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li repeat.for="route of router.navigation" class="${route.isActive ? 'active' : ''}">
+          <a href.bind="route.href" class="waves-effect waves-light">${route.title}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-host">
+
+    <router-view></router-view>
+  </div>
+</template>
